@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+{{> head }}
+<body>
+ {{> nav }}
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+</style>
+
+ <h1>Result of stock correlation calculations:</h1>
+ <h2>Heat Map:</h2>
+
+<img src='data:image/png;base64,{{DataString}}'>
+
+
+ <h2>Correlation Table:</h2>
+
+{{{HTMLTable}}}
+
+ {{> bootstrap-from-cdn-body }}
+</body>
+</html>

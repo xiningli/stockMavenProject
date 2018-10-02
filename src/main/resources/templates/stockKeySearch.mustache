@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+{{> head }}
+<body>
+ {{> nav }}
+
+<style>
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 5px;
+    text-align: left;
+}
+</style>
+ <h1>The Stock Key in Different Exchanges: </h1>
+
+{{{stockNameSearchTableHTML}}}
+
+ {{> bootstrap-from-cdn-body }}
+</body>
+</html>
